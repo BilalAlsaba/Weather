@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-11-js-5</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Assignment-11-js-5.css">
+</head>
+
+<body>
+
+    <div class="site-content">
+        <div class="site-header">
+            <div class="container">
+                <a class='branding' href='/'>
+                    <img src="images/logo@2x.png" alt="" class="logo">
+                    <div class="logo-type">
+                        <h1 class="site-title">Weather</h1>
+                        <div class="site-description">tagline goes here</div>
+                    </div>
+                </a>
+
+                <!-- Default snippet for navigation -->
+                <div class="main-navigation">
+                    <ul class="menu">
+                        <li class="menu-item current-menu-item"><a href=''>Home</a></li>
+                        <li class="menu-item"><a href="#">News</a></li>
+                        <li class="menu-item"><a href="#">Live cameras</a></li>
+                        <li class="menu-item"><a href="#">Photos</a></li>
+                        <li class="menu-item"><a href='Contact.html'>Contact</a></li>
+                    </ul> <!-- .menu -->
+                </div> <!-- .main-navigation -->
+            </div>
+        </div> 
+
+
+
+        <div class="hero hero-bg" data-bg-image="images/banner.png">
+            <div class="container">
+                <form class="find-location">
+                    <input type="text" placeholder="Find your location..." id="search">
+                    <input type="button" value="Find" id="submit">
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <div class="forecast-table">
+            <div class="container">
+                <div class="forecast-container">
+                    <div class="today forecast">
+                        <div class="forecast-header" >
+                            <div class="day" id="today">Sunday</div>
+                            <div class="date">
+                                <span id="date-number">22</span>
+                                <span id="date-month">mar</span>
+                            </div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="forecast-content">
+                            <div class="location" id="Locat">Cairo</div>
+                            <div class="degree">
+                                <div class="num"><span id="today-temp">31</span><sup>o</sup>C</div>
+                                <div class="forecast-icon">
+                                    <img id="today-img" src="https://cdn.weatherapi.com/weather/64x64/night/116.png" alt="" width=90>
+                                </div>
+                            </div>
+                            <div class="custom" id="weather-text">Partly cloudy</div>
+                            <img src="images/icon-umberella.png" alt=""><span id="Humidity">20%</span>
+                            <img src="images/icon-wind.png" alt=""><span id="wind">18km/h</span>
+                            <img src="images/icon-compass.png" alt=""><span id="windDirection">East</span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="forecast forecast-betwen ">
+                        <div class="forecast-header ">
+                            <div class="day next-day">Monday</div>
+                        </div>
+                        <div class="forecast-content forecast-content-other">
+                            <div class="forecast-icon">
+                                <img class="next-img" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="" >
+                            </div>
+                            <div class="degree"> <span class="next-max">32.6</span><sup>o</sup>C</div>
+                            <div><span class="next-min">32.6</span><sup>o</sup></div>
+                            <div class="custom next-weather-text">Sunny</div>
+                        </div>
+                    </div>
+                    <div class="forecast">
+                        <div class="forecast-header">
+                            <div class="day next-day">Tuesday</div>
+                        </div>
+                        <div class="forecast-content forecast-content-other">
+                            <div class="forecast-icon">
+                                <img class="next-img" src="https://cdn.weatherapi.com/weather/64x64/day/113.png" alt="">
+                            </div>
+                            <div class="degree"><span class="next-max">32.6</span><sup>o</sup>C</div>
+                            <div><span class="next-min">32.6</span><sup>o</sup></div>
+                            <div class="custom next-weather-text">Sunny</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div action="#" class="subscribe-form">
+                            <input type="text" placeholder="Enter your email to subscribe...">
+                            <input type="submit" value="Subscribe">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-1">
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </footer> 
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Assignment-11-js-5.js"></script>
+
+</body>
+
+</html>
